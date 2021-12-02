@@ -25,5 +25,6 @@ public class HotelReservationSystem {
         hotelReservation.findCheapestHotel();
         hotelReservation.findCheapestHotel_Weekday_Weekend();
         hotelReservation.findCheapestBestRatedHotel();
+        hotelReservation.findBestRatedHotel();
     }
 }

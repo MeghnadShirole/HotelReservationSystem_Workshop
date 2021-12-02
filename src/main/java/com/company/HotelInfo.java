@@ -8,6 +8,8 @@ public class HotelInfo {
     private String hotelName;
     private int weekdayRate;
     private int weekendRate;
+    private int hotelStarRating;
+
 
 
     //gets and pus
@@ -35,6 +37,14 @@ public class HotelInfo {
         this.weekendRate = weekendRate;
     }
 
+    public int getHotelStarRating() {
+        return hotelStarRating;
+    }
+
+    public void setHotelStarRating(int hotelStarRating) {
+        this.hotelStarRating = hotelStarRating;
+    }
+
     @Override
     public String toString() {
         return "\n"+"Hotel{" +
@@ -44,9 +54,10 @@ public class HotelInfo {
                 '}';
     }
 
-    public HotelInfo(String hotelName, int weekdayRate, int weekendRate) {
+    public HotelInfo(String hotelName, int weekdayRate, int weekendRate,int hotelStarRating) {
         this.hotelName = hotelName;
         this.weekdayRate = weekdayRate;
         this.weekendRate=weekendRate;
+        this.hotelStarRating=hotelStarRating;
     }
 }

@@ -10,9 +10,9 @@ public class HotelReservationSystem {
 
         HotelReservation hotelReservation = new HotelReservation();
 
-        hotelReservation.addHotel("LakeWood", 110,90);
-        hotelReservation.addHotel("BridgeWood", 150,60);
-        hotelReservation.addHotel("RidgeWood", 220,150);
+        hotelReservation.addHotel("LakeWood", 110,90,3);
+        hotelReservation.addHotel("BridgeWood", 150,60,4);
+        hotelReservation.addHotel("RidgeWood", 220,150,5);
 
         String sDate1="10-09-2020";
         String sDate2="11-09-2020";

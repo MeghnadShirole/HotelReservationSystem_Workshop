@@ -10,11 +10,11 @@ public class HotelReservationSystemTest {
     public void whenHotelAdded_ShouldPassTest_IfAddedToList() {
         HotelReservation hotelReservation = new HotelReservation();
 
-        boolean hotelLakewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("LakeWoods", 110,90));
+        boolean hotelLakewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("LakeWoods", 110,90,3));
         Assert.assertTrue(hotelLakewoodAdded);
-        boolean hotelBridgewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("Bridgewood", 160,60));
+        boolean hotelBridgewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("Bridgewood", 160,60,4));
         Assert.assertTrue(hotelBridgewoodAdded);
-        boolean hotelRidgewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("Ridgewood", 220,150));
+        boolean hotelRidgewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("Ridgewood", 220,150,5));
         Assert.assertTrue(hotelRidgewoodAdded);
     }
 

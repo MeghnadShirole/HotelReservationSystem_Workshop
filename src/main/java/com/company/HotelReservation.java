@@ -10,8 +10,8 @@ public class HotelReservation {
     List<HotelInfo> hotelDetails=new ArrayList<>();
 
     //looking hotels and list of hotels
-    public void  addHotel(String hotelName, int weekdayRate, int weekendRate) {
-        HotelInfo hotel= new HotelInfo(hotelName,weekdayRate,weekendRate );
+    public void  addHotel(String hotelName, int weekdayRate, int weekendRate,int hotelStarRating) {
+        HotelInfo hotel= new HotelInfo(hotelName,weekdayRate,weekendRate,hotelStarRating );
         hotelDetails.add(hotel);
     }
     public void getHotelDetails(){

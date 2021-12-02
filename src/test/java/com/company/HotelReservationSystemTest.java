@@ -17,4 +17,10 @@ public class HotelReservationSystemTest {
         boolean hotelRidgewoodAdded = hotelReservation.checkHotelAdd(new HotelInfo("Ridgewood", 220,150));
         Assert.assertTrue(hotelRidgewoodAdded);
     }
+
+    @Test
+    public void toFindTheCheapestHotel() {
+        HotelReservation cheapHotel = new HotelReservation();
+        cheapHotel.findCheapestHotel();
+    }
 }

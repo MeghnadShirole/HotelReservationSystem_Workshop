@@ -1,10 +1,10 @@
 package com.company;
 
 public class HotelInfo {
-        /*
-        * Encapsulation is achieved here
-        * As this class only contains information related to hotels
-        * */
+    /*
+     * Encapsulation is achieved here
+     * As this class only contains information related to hotels
+     */
     private String hotelName;
     private int weekdayRate;
     private int weekendRate;

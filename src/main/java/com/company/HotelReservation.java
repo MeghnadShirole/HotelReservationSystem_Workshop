@@ -22,4 +22,15 @@ public class HotelReservation {
     public boolean checkHotelAdd(HotelInfo hotel) {
       return hotelDetails.add(hotel);
     }
+
+    /*
+    *Finding the cheapest Hotel in the list
+    */
+    public void findCheapestHotel(){
+        int LakeWoodRate = 110; int BridgeWoodRate = 160; int Ridgewood = 220;
+        int cheapestHotel = (LakeWoodRate>BridgeWoodRate) ?
+                (Math.max(LakeWoodRate, Ridgewood)) :
+                (Ridgewood) ;
+        System.out.println("The cheapest Hotel is " +cheapestHotel);
+    }
 }

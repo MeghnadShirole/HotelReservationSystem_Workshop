@@ -36,7 +36,7 @@ public class HotelReservation {
     }
 
     public void findCheapestHotel_Weekday_Weekend() {
-        String hotel = null;
+        String hotel =null;
         int totalLakeWoodCost = 0;
         int totalBridgeWoodCost = 0;
         int totalRidgeWoodCost = 0;
@@ -64,6 +64,32 @@ public class HotelReservation {
         }
         if (totalRidgeWoodCost < totalLakeWoodCost && totalRidgeWoodCost < totalBridgeWoodCost) {
             System.out.println("RidgeWood with total rates $370.");
+        }
+    }
+
+    public void findCheapestBestRatedHotel() {
+        String hotel =null;
+        int totalLakeWoodCost = 0, totalBridgeWoodCost = 0, totalRidgeWoodCost= 0;
+        int LakeWood_Rate = 3, BridgeWood_Rate = 4, RidgeWood_Rate = 5;
+        if (Objects.equals(hotel, "LakeWood")) {
+            int weekday_rate = 110;
+            int weekend_rate = 90;
+            totalLakeWoodCost = (totalLakeWoodCost + weekday_rate + weekend_rate);
+        }
+        if (Objects.equals(hotel, "BridgeWood")) {
+            int weekday_rate = 150;
+            int weekend_rate = 50;
+            totalBridgeWoodCost = (totalBridgeWoodCost + weekday_rate + weekend_rate);
+        }
+        if (Objects.equals(hotel, "RidgeWood")) {
+            int weekday_rate = 220;
+            int weekend_rate = 150;
+            totalRidgeWoodCost = (totalRidgeWoodCost + weekday_rate + weekend_rate);
+        }
+        if ((totalBridgeWoodCost <= totalLakeWoodCost && totalBridgeWoodCost < totalRidgeWoodCost) && (totalLakeWoodCost < totalBridgeWoodCost && totalBridgeWoodCost < totalRidgeWoodCost)) {
+            System.out.println("BridgeWood");
+            System.out.println("Rating:" + BridgeWood_Rate);
+            System.out.println("Total Rates: $" + totalBridgeWoodCost );
         }
     }
 }
